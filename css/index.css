@@ -1,0 +1,128 @@
+@import './variaveis.css';
+@import './fontes.css';
+@import './select.css';
+
+body{
+    background: var(--fa-bg-primary);
+    color: var(--fa-color-prymary);
+    font-family: var(--fa-font);
+    box-sizing: border-box;
+    
+    
+}
+
+/* header*/
+
+
+.header{  
+    background:var(--fa-bg-secondary);
+    color: var(--fa-color-primary);
+    box-shadow: var(--fa-bx-shadow);  
+  
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc((100% - 960px) / 2);
+    margin: 0 10px;
+    flex-wrap: no-wrap; 
+       
+}
+
+.cbtn-toggle{
+    border: none;
+    background:var(--fa-bg-secondary);
+    color: var(--fa-color-primary);
+    outline: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.1s ease-out;
+}
+
+.cbtn-toggle:hover{
+    opacity: 0.5;
+}
+
+/*main section search*/
+
+.search{
+    padding: 40px calc((100% - 960px) / 2);    
+    margin: 0 10px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-group{    
+    box-shadow: var(--fa-bx-shadow); 
+    border-radius: var(--fa-border-radius);
+    background:var(--fa-bg-secondary);
+    color:var(--fa-color-primary);
+    padding: 20px;
+    width: 400px;    
+}
+
+ input{
+    border:none;
+    background: var(--fa-bg-secondary);
+    color: var(--fa-color-primary);
+    width: 80%;
+    outline: none; 
+    margin-left: 10px;   
+}
+
+
+
+/* Articles*/
+
+.grid{
+    display: grid;
+    gap: 20px;   
+    grid-template-columns: repeat(4, 1fr);    
+    padding: 0 calc((100% - 960px) / 2);
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: var(--fa-border-radius);
+    border-top-right-radius: var(--fa-border-radius);
+}
+.card{
+    background: var(--fa-bg-secondary);
+    color: var(--fa-color-primary); 
+    border-radius: var(--fa-border-radius);
+    min-width: 240px;   
+}
+
+.card-body{
+    padding:20px;
+    line-height: 1;    
+}
+
+@media  (max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr)
+    }
+    
+}
+@media  (max-width:750px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr)
+    }
+    
+}
+@media  (max-width:600px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .header{
+        font-size:.7rem;
+    }
+    
+    
+}

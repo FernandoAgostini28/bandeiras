@@ -1,0 +1,21 @@
+@import "./fontes.css";
+
+:root{
+    --fa-bg-teste:red;
+    --fa-color-primary:#212E37;
+    --fa-color-secondary:#2B3743;
+    --fa-bg-primary:#FAFAFA;
+    --fa-bg-secondary:#FFFFFF;
+    --fa-font:'Nunito', sans-serif;
+    --fa-border-radius: 0.5rem;
+    --fa-bx-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+/* modo dark*/
+
+body.dark{
+    --fa-color-primary:#FAFAFA;
+    --fa-color-secondary:#FFFFFF;
+    --fa-bg-primary:#212E37;
+    --fa-bg-secondary:#2B3743;    
+}
