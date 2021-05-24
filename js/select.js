@@ -35,6 +35,7 @@ for (i = 0; i < l; i++) {
               y[k].removeAttribute("class");
             }
             this.setAttribute("class", "same-as-selected");
+            console.log(s.options[i].value)
             break;
           }
         }
