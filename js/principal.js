@@ -13,7 +13,8 @@ const fetchData = async () =>{
     const res = await fetch('https://restcountries.eu/rest/v2/all')
     const data = await res.json();   
     printarBandeira(data);
-    cardFiltrado(data)
+    cardFiltrado(data);
+    selecionado(data);
     
 }
 
@@ -30,6 +31,7 @@ const printarBandeira = data => {
         <p><strong>População: </strong>${item.population}</p>
         <p><strong>Região: </strong>${item.region}</p>
         <p><strong>Capital: </strong>${item.capital}</p>
+        <span><a href="./detalhes.html?name=${item.name}"><strong>Conheça ${item.name}</strong></a></span>
     </div>
 </article>`
  
